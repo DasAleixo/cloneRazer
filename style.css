@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --maincolor: #0f0f0f; 
+    --scolor: rgb(67, 255, 98);
+    --bgcolor: rgb(255, 255, 255);
+    --textcolor: #797979;
+    --gap: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    background-color: var(--maincolor);
+    color: var(--textcolor);
+    width: 100%;
+    height: 6vh;
+    padding: 2.5rem 2rem;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+    position: fixed;
+}
+
+.navbar a img{
+    width: 5rem;
+}
+
+.navbar h2 {
+    font-size: 10rem;
+}
+
+.navul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.navli {
+    margin-right: 3rem;
+}
+
+.navli .carrinho{
+    width: 50px;
+    filter: invert(15%);
+    cursor: pointer;
+}
+
+.navli .carrinho:hover{
+    filter: invert(100%);
+    transition: 1s;
+}
+
+.navli .lupa{
+    width: 30px;
+    filter: invert(15%);
+    cursor: pointer;
+}
+
+.navli .lupa:hover{
+    filter: invert(100%);
+    transition: 1s;
+}
+
+.navli .menu{
+    display: none;
+    width: 50px;
+    cursor: pointer;
+    filter: invert(100%);
+}
+
+main {
+    color: black;
+    width: 100%;
+}
+
+.spacing {
+    padding-bottom: 5rem;
+}
+
+header {
+    background-color: var(--scolor);
+    width: 100%;
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    position: fixed;
+}
+
+.headerul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.headerli {
+    margin-right: 1.5rem;
+}
+
+.headerli a{
+    text-decoration: none;
+    color: black;
+}
+
+.headerli a:hover{
+    color: white;
+}
+
+.sidebar {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--maincolor);
+    z-index: 100;
+    position: fixed;
+    visibility: hidden;
+}
+
+.sideul {
+    list-style: none;
+}
+
+.sideli {
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 0.1rem solid black;
+}
+
+.sideli a{
+    font-size: 3rem;
+    text-decoration: none;
+    color: var(--bgcolor);
+    width: 100%;
+}
+
+.headersection {
+    background-color: var(--maincolor);
+    width: 100%;
+    height: 100vh;
+}
+
+.figures{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 2rem;
+    color: white;
+    width: 100%;
+}
+
+.figures .figuresul {
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem;
+    overflow-y: auto;
+}
+
+.figures .figure {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.figure a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.figure a:hover{
+    color: var(--scolor);
+}
+
+.figures .figure img{
+    align-items: center;
+    max-width: 70%;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.content h2{
+    display: flex;
+    flex-direction: column;
+}
+
+.content .label{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 1rem 1rem;
+    margin-top: 2rem;
+}
+
+.content h2 span{
+    color: var(--scolor);
+    font-size: 3rem;
+}
+
+.content .hrefsacola{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.content .hrefsacola a{
+    margin: 2rem;
+    text-decoration: none;
+    color: white;
+}
+
+.content .hrefsacola a:hover{
+    text-decoration: underline;
+}
+
+.content .hrefsacola img {
+    width: 2rem;
+}
+
+.label span{
+    color: var(--scolor);
+}
