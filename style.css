@@ -248,11 +248,50 @@ header {
     color: var(--textcolor);
 }
 
+.carousel-snapper {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.arrow-left, .arrow-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    margin-top: 2.5rem;
+    font-size: 20px;
+    height: 390px;
+    width: 60px;
+    text-align: center;
+    color: #ffff;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to left, transparent 0%, black 200%)
+}
+
+.arrow-right {
+    left: auto;
+    right: 0;
+    background: linear-gradient(to right, transparent 0%, black 200%)
+}
+
+.carousel-snapper .arrow-left {
+    position: absolute;
+}
+
+.carousel-snapper .arrow-right {
+    position: absolute;
+}
+
 .boxes {
     display: flex;
     margin-top: 2rem;
     align-items: center;
-    overflow-y: auto;
+    overflow: hidden;
 }
 
 .box {
@@ -261,6 +300,12 @@ header {
     background-color: var(--hotbar);
     overflow: hidden;
     margin: .5rem;
+    transition: .1s;
+}
+
+.box:hover{
+    transform: scale(0.9);
+    box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.397);
 }
 
 .box .boximg{
@@ -320,6 +365,12 @@ header {
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
+    transition: 0.2s;
+}
+
+.buy:hover {
+    box-shadow: 3px 3px 3px 2.5px rgba(0, 0, 0, 0.2);
+    color: white;
 }
 
 

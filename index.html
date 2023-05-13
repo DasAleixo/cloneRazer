@@ -7,6 +7,7 @@
     <title>Document</title>
     <script src="main.js"></script>
     <script src="scripts/counter.js"></script>
+    <script src="scripts/controls.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media/992.css" media="screen and (max-width: 992px)" />
     <link rel="stylesheet" href="media/768.css" media="screen and (max-width: 768px)" />
@@ -76,8 +77,13 @@
                     <h2>FRESH OFF THE LINE</h2>
                     <span>Check out our latest releases to secure the most up-to-date upgrades for your setup</span>
                 </div>
+
+                <div class="carousel-snapper">
+                    <button class="arrow-left control" aria-label="Next Image">◀</button>
+                    <button class="arrow-right control" aria-label="Next Image">▶</button>
+                </div>
                 <ul class="boxes">
-                    <li class="box">
+                    <li class="box currentbox" id="1">
                         <div class="boximg"><img src="images/showcase/fone.png" alt=""></div>
                         <div class="hotbar">
                             <label>Razer Kaira HyperSpeed - Xbox Licensed</label>
@@ -88,7 +94,7 @@
                             <a href="#" class="buy">BUY</a>
                         </div>
                     </li>
-                    <li class="box">
+                    <li class="box currentbox" id="2">
                         <div class="boximg"><img src="images/showcase/mouse.png" alt=""></div>
                         <div class="hotbar">
                             <label>Razer Kaira HyperSpeed - Xbox Licensed</label>
@@ -99,7 +105,7 @@
                             <a href="#" class="buy">BUY</a>
                         </div>
                     </li>
-                    <li class="box">
+                    <li class="box currentbox" id="3">
                         <div class="boximg"><img src="images/showcase/oculos.png" alt=""></div>
                         <div class="hotbar">
                             <label>Razer Kaira HyperSpeed - Xbox Licensed</label>
@@ -110,7 +116,7 @@
                             <a href="#" class="buy">BUY</a>
                         </div>
                     </li>
-                    <li class="box">
+                    <li class="box currentbox" id="4">
                         <div class="boximg"><img src="images/showcase/teclado.png" alt=""></div>
                         <div class="hotbar">
                             <label>Razer Kaira HyperSpeed - Xbox Licensed</label>
@@ -121,7 +127,7 @@
                             <a href="#" class="buy">BUY</a>
                         </div>
                     </li>
-                    <li class="box">
+                    <li class="box currentbox" id="5">
                         <div class="boximg"><img src="images/showcase/controller.png" alt=""></div>
                         <div class="hotbar">
                             <label>Razer Kaira HyperSpeed - Xbox Licensed</label>
