@@ -6,6 +6,8 @@
     --scolor: rgb(67, 255, 98);
     --bgcolor: rgb(255, 255, 255);
     --textcolor: #797979;
+    --hotbar: #3d3d3d;
+    --boximg: #1f1f1f;
     --gap: 3rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -144,19 +146,20 @@ header {
 .headersection {
     background-color: var(--maincolor);
     width: 100%;
-    height: 100vh;
+    height: 180vh;
 }
 
 .figures{
     display: flex;
     flex-direction: column;
-    padding: 3rem 2rem;
+    padding: 2rem 2rem;
     color: white;
     width: 100%;
 }
 
 .figures .figuresul {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     margin: 0.5rem;
     overflow-y: auto;
@@ -205,6 +208,7 @@ header {
 }
 
 .content .hrefsacola{
+    margin-top: 1rem;
     list-style: none;
     display: flex;
     align-items: center;
@@ -213,7 +217,7 @@ header {
 }
 
 .content .hrefsacola a{
-    margin: 2rem;
+    margin-left: 1rem;
     text-decoration: none;
     color: white;
 }
@@ -229,3 +233,96 @@ header {
 .label span{
     color: var(--scolor);
 }
+
+.showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 1rem 1rem;
+}
+
+.showcase h2{
+    color: var(--bgcolor);
+}
+
+.showcase span{
+    color: var(--textcolor);
+}
+
+.boxes {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.box {
+    min-width: 18rem;
+    min-height: 24rem;
+    background-color: var(--hotbar);
+    overflow: hidden;
+    margin: .5rem;
+}
+
+.box .boximg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--boximg);
+}
+
+.boximg img {
+    width: 256px;
+    height: 256px;
+}
+
+.box .hotbar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 5.2rem;
+    padding: .5rem;
+}
+
+.hotbar label{
+    font-weight: 400;
+    color: var(--bgcolor);
+    font-size: 1.2rem;
+}
+
+.hotbar span{
+    margin-top: .5rem;
+    font-size: .8rem;
+    color: var(--textcolor);
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+}
+
+.rodape .price{
+    font-weight: 400;
+    font-size: 1rem;
+    padding: .5rem;
+    color: var(--bgcolor);
+}
+
+.rodape .buy {
+    color: var(--bgcolor);
+    background-color: var(--scolor);
+    border-radius: 2rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+
