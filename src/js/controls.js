@@ -34,7 +34,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
                     behavior: "smooth",
                     inline: "center", 
                     block: "nearest",
-                });
+                });        
             }
      
         });  

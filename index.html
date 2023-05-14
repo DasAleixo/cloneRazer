@@ -5,23 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="main.js"></script>
-    <script src="scripts/counter.js"></script>
-    <script src="scripts/controls.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media/992.css" media="screen and (max-width: 992px)" />
-    <link rel="stylesheet" href="media/768.css" media="screen and (max-width: 768px)" />
-    <link rel="stylesheet" href="media/540.css" media="screen and (max-width: 540px)" />
-    <link rel="stylesheet" href="plus/scroll.css" />
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/fulldark.css">
+    <link rel="stylesheet" href="src/css/media/992.css" media="screen and (max-width: 992px)" />
+    <link rel="stylesheet" href="src/css/media/768.css" media="screen and (max-width: 768px)" />
+    <link rel="stylesheet" href="src/css/media/540.css" media="screen and (max-width: 540px)" />
+    <link rel="stylesheet" href="src/css/scroll.css" />
 </head>
 
 <body>
-    <nav class="navbar">
-        <a><img src="images/logo/logo.png" alt="Predator"></a>
+    <nav class="navbar smallblack">
+        <a><img src="src/images/logo/logo.png" alt="Predator"></a>
         <ul class="navul">
-            <li class="navli"><img class="carrinho" href="#" src="images/icons/carrinho.svg" alt=""></li>
-            <li class="navli"><img class="lupa" src="images/icons/lupa.svg" alt=""></li>
-            <li class="navli"><img id="menu" class="menu" src="images/icons/menu.png" alt=""></li>
+            <li class="navli"><img class="carrinho" href="#" src="src/images/icons/carrinho.svg" alt=""></li>
+            <li class="navli"><img class="lupa" src="src/images/icons/lupa.svg" alt=""></li>
+            <li class="navli"><img id="menu" class="menu" src="src/images/icons/menu.png" alt=""></li>
+            <li class="navli">
+                <div class="button">
+                    <div class="small"></div>
+                </div>
+            </li>
         </ul>
     </nav>
 
@@ -47,26 +50,26 @@
                 </ul>
             </nav>
         </aside>
-        <section class="headersection">
+        <section class="headersection smallblack">
             <section class="figures">
                 <ul class="figuresul" id="test">
-                    <li class="figure"><a id="txt1" href="">Laptops</a><img id="img1" src="images/componentes/laptops.png" alt=""></li>
-                    <li class="figure"><a id="txt2" href="">Components</a><img id="img2" src="images/componentes/components.png" alt=""></li>
-                    <li class="figure"><a id="txt3" href="">Mice</a><img id="img3" src="images/componentes/mice.png" alt=""></li>
-                    <li class="figure"><a id="txt4" href="">Keyboards</a><img id="img4" src="images/componentes/keyboards.png" alt=""></li>
-                    <li class="figure"><a id="txt5" href="">Audio</a><img id="img5" src="images/componentes/audio.png" alt=""></li>
-                    <li class="figure"><a id="txt6" href="">Content</a><img id="img6" src="images/componentes/contentcreation.png" alt=""></li>
-                    <li class="figure"><a id="txt7" href="">Chairs</a><img id="img7" src="images/componentes/chairs.png" alt=""></li>
-                    <li class="figure"><a id="txt8" href="">Console</a><img id="img8" src="images/componentes/console.png" alt=""></li>
-                    <li class="figure"><a id="txt9" href="">Mobile</a><img id="img9" src="images/componentes/mobile.png" alt=""></li>
-                    <li class="figure"><a id="txt10" href="">Gear</a><img id="img10" src="images/componentes/gear.png" alt=""></li>
+                    <li class="figure"><a id="txt1" href="">Laptops</a><img id="img1" src="src/images/componentes/laptops.png" alt=""></li>
+                    <li class="figure"><a id="txt2" href="">Components</a><img id="img2" src="src/images/componentes/components.png" alt=""></li>
+                    <li class="figure"><a id="txt3" href="">Mice</a><img id="img3" src="src/images/componentes/mice.png" alt=""></li>
+                    <li class="figure"><a id="txt4" href="">Keyboards</a><img id="img4" src="src/images/componentes/keyboards.png" alt=""></li>
+                    <li class="figure"><a id="txt5" href="">Audio</a><img id="img5" src="src/images/componentes/audio.png" alt=""></li>
+                    <li class="figure"><a id="txt6" href="">Content</a><img id="img6" src="src/images/componentes/contentcreation.png" alt=""></li>
+                    <li class="figure"><a id="txt7" href="">Chairs</a><img id="img7" src="src/images/componentes/chairs.png" alt=""></li>
+                    <li class="figure"><a id="txt8" href="">Console</a><img id="img8" src="src/images/componentes/console.png" alt=""></li>
+                    <li class="figure"><a id="txt9" href="">Mobile</a><img id="img9" src="src/images/componentes/mobile.png" alt=""></li>
+                    <li class="figure"><a id="txt10" href="">Gear</a><img id="img10" src="src/images/componentes/gear.png" alt=""></li>
                 </ul>
             <section class="content">
                 <div class="label">
                     <h2><span>THE LATEST AND GREATEST GAMING GEAR</span>RAZER MICE, KEYBOARDS, HEADSETS, LAPTOPS & MORE</h2>
                     <ul class="figuresul">
                         <li class="hrefsacola">
-                            <img src="images/logo/razerstore-icon.svg" alt="">
+                            <img src="src/images/logo/razerstore-icon.svg" alt="">
                             <a href="http://www.razer.com/us/en/mouse-and-keyboard/">Mouse and Keyboard <span>></span></a>
                         </li>
                     </ul>
@@ -84,7 +87,8 @@
                 </div>
                 <ul class="boxes">
                     <li class="box currentbox" id="1">
-                        <div class="boximg"><img src="images/showcase/fone.png" alt=""></div>
+                        <div class="tag"><a>NEW</a></div>
+                        <div class="boximg"><img src="src/images/showcase/fone.png" alt=""></div>
                         <div class="hotbar">
                             <label>Razer Kaira HyperSpeed - Xbox Licensed</label>
                             <span>Wireless Multi-Platform Gaming Headset</span>
@@ -95,7 +99,8 @@
                         </div>
                     </li>
                     <li class="box currentbox" id="2">
-                        <div class="boximg"><img src="images/showcase/mouse.png" alt=""></div>
+                        <div class="tag laranja"><a>EXCLUSIVE</a></div>
+                        <div class="boximg"><img src="src/images/showcase/mouse.png" alt=""></div>
                         <div class="hotbar">
                             <label>Razer Kaira HyperSpeed - Xbox Licensed</label>
                             <span>Wireless Multi-Platform Gaming Headset</span>
@@ -106,7 +111,8 @@
                         </div>
                     </li>
                     <li class="box currentbox" id="3">
-                        <div class="boximg"><img src="images/showcase/oculos.png" alt=""></div>
+                        <div class="tag laranja"><a>EXCLUSIVE</a></div>
+                        <div class="boximg"><img src="src/images/showcase/oculos.png" alt=""></div>
                         <div class="hotbar">
                             <label>Razer Kaira HyperSpeed - Xbox Licensed</label>
                             <span>Wireless Multi-Platform Gaming Headset</span>
@@ -117,7 +123,7 @@
                         </div>
                     </li>
                     <li class="box currentbox" id="4">
-                        <div class="boximg"><img src="images/showcase/teclado.png" alt=""></div>
+                        <div class="boximg"><img src="src/images/showcase/teclado.png" alt=""></div>
                         <div class="hotbar">
                             <label>Razer Kaira HyperSpeed - Xbox Licensed</label>
                             <span>Wireless Multi-Platform Gaming Headset</span>
@@ -128,7 +134,7 @@
                         </div>
                     </li>
                     <li class="box currentbox" id="5">
-                        <div class="boximg"><img src="images/showcase/controller.png" alt=""></div>
+                        <div class="boximg"><img src="src/images/showcase/controller.png" alt=""></div>
                         <div class="hotbar">
                             <label>Razer Kaira HyperSpeed - Xbox Licensed</label>
                             <span>Wireless Multi-Platform Gaming Headset</span>
@@ -142,5 +148,10 @@
             </section>
         </section>
     </main>
+
+    <script src="src/js/main.js"></script>
+    <script src="src/js/counter.js"></script>
+    <script src="src/js/controls.js"></script>
+    <script src="src/js/darkmode.js"></script>
 </body>
 </html>

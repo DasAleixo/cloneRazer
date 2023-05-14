@@ -1,0 +1,7 @@
+.content .label{
+    flex-wrap: wrap;
+}
+
+.navli .menu {
+    visibility: hidden;
+}
