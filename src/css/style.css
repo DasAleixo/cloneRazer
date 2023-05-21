@@ -3,10 +3,10 @@
     margin: 0;
     box-sizing: border-box;
     --maincolor: #0f0f0f; 
-    --scolor: rgb(67, 255, 98);
+    --scolor: rgb(21, 255, 60);
     --bgcolor: rgb(255, 255, 255);
     --textcolor: #797979;
-    --hotbar: #3d3d3d;
+    --hotbar: #525252;
     --boximg: #1f1f1f;
     --gap: 3rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -14,6 +14,12 @@
 
 body {
     color: white;
+}
+
+body .centralize{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .smallblack{
@@ -28,8 +34,14 @@ body {
     padding: 2.5rem 2rem;
     align-items: center;
     justify-content: space-between;
-    z-index: 99;
+    z-index: 100;
     position: fixed;
+    border-bottom: 1px solid var(--scolor);
+}
+
+.navbar a:hover{
+    transition: .5s;
+    color: white;
 }
 
 .navbar a img{
@@ -50,9 +62,14 @@ body {
     margin-right: 3rem;
 }
 
+.navli a{
+    text-decoration: none;
+    color: var(--textcolor);
+}
+
 .navli .carrinho{
-    width: 50px;
-    filter: invert(15%);
+    width: 30px;
+    filter: invert(30%);
     cursor: pointer;
 }
 
@@ -62,8 +79,8 @@ body {
 }
 
 .navli .lupa{
-    width: 30px;
-    filter: invert(15%);
+    width: 15px;
+    filter: invert(30%);
     cursor: pointer;
 }
 
@@ -76,6 +93,40 @@ body {
     display: none;
     width: 50px;
     cursor: pointer;
+}
+
+.search {
+    display: none;
+    width: 75vw;
+    height: 100%;
+    background-color: #1f1f1f;
+    z-index: 101;
+    position: absolute;
+    top: 0;
+    left: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.search img {
+    width: 30px;
+    filter: invert(30%);
+    cursor: pointer;
+}
+
+.search img:hover {
+    filter: invert(100%);
+    transition: .5s;
+}
+
+.search input {
+    margin: 3rem;
+    height: 80%;
+    width: 80%;
+    background-color: #1f1f1f;
+    border: none;
+    font-size: 1rem;
+    color: white;
 }
 
 .navli .button{
@@ -111,14 +162,27 @@ main {
 }
 
 header {
-    background-color: var(--scolor);
+    background-color: var(--hotbar);
+    color: white;
     width: 100%;
+    height: 2rem;
     padding: 0.5rem 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     z-index: 99;
+    font-weight: 400;
     position: fixed;
+}
+header a {
+    padding: .5rem;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration:underline;
 }
 
 .headerul {
@@ -171,7 +235,7 @@ header {
 
 .headersection {
     width: 100%;
-    height: 180vh;
+    height: 300vh;
 }
 
 .figures{
@@ -180,6 +244,12 @@ header {
     padding: 2rem 2rem;
     color: white;
     width: 100%;
+}
+
+.figures .centralize {
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
 .figures .figuresul {
@@ -422,6 +492,52 @@ header {
     box-shadow: 3px 3px 3px 2.5px rgba(0, 0, 0, 0.2);
     color: white;
 }
+
+.images {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 2rem;
+    overflow: hidden;
+    list-style: none;
+    box-shadow: 12px 12px 12px 12px rgba(0, 0, 0, 0.445);
+}
+
+.images .img {
+    display: none;
+}
+
+.images .active {
+    display: block;
+}
+
+.checks {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.checks .check {
+    width: 12px;
+    height: 12px;
+    margin: 0.5rem;
+    cursor: pointer;
+    color: var(--scolor);
+    border: none;
+    background-color: var(--scolor);
+    border-radius: 10px; 
+}
+
+.check:hover{
+    transform: scale(1.1);
+    transition: 1ms;
+    background-color: var(--scolor);
+    border-radius: 5px;
+    box-shadow: .5px .5px .5px .5px rgb(253, 253, 253);
+}
+
+
+
 
 
 

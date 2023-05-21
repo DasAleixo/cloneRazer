@@ -6,6 +6,10 @@
     display: none;
 }
 
+.navli .txt {
+    display: none;
+}
+
 .navli .lupa {
     display: none;
 }
@@ -35,7 +39,7 @@
 }
 
 .navli .menu {
-    display: block;
+    display: flex;
     visibility: visible;
 }
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,10 +18,23 @@
     <nav class="navbar smallblack">
         <a><img src="src/images/logo/logo.png" alt="Predator"></a>
         <ul class="navul">
-            <li class="navli"><img class="carrinho" href="#" src="src/images/icons/carrinho.svg" alt=""></li>
-            <li class="navli"><img class="lupa" src="src/images/icons/lupa.svg" alt=""></li>
             <li class="navli"><img id="menu" class="menu" src="src/images/icons/menu.png" alt=""></li>
+            <li class="navli"><a class="txt" href="#">Store</a></li>
+            <li class="navli"><a class="txt" href="#">PC</a></li>
+            <li class="navli"><a class="txt" href="#">Console</a></li>
+            <li class="navli"><a class="txt" href="#">Mobile</a></li>
+            <li class="navli"><a class="txt" href="#">lifestyle</a></li>
+            <li class="navli"><a class="txt" href="#">Services</a></li>
+            <li class="navli"><a class="txt" href="#">Community</a></li>
+            <li class="navli"><a class="txt" href="#">Support</a></li>
+            <li class="navli"><img class="carrinho" href="#" src="src/images/icons/carrinho.svg" alt=""></li>
+            <li class="navli"><img id="lupa" class="lupa" src="src/images/icons/lupa.svg" alt=""></li>
             <li class="navli">
+                <div id="search" class="search">
+                    <img class="pesquisar" src="src/images/icons/lupa.svg" alt="">
+                    <input type="text" placeholder="Search">
+                    <img id="x" src="src/images/icons/x.png" alt="">
+                </div>
                 <div class="button">
                     <div class="small"></div>
                 </div>
@@ -31,12 +45,8 @@
     <main>
         <div class="spacing"></div>
         <header>
-            <h2>Razer Brasil</h2>
-            <ul class="headerul">
-                <li class="headerli"><a href="#">Visão geral</a></li>
-                <li class="headerli"><a href="#">Blog</a></li>
-                <li class="headerli"><a href="#">Saiba mais</a></li>
-            </ul>
+            <span>Unleash a new age of technology with an arsenal of cutting-edge innovations that will keep you ahead
+                of the game.</span> <a href="#">Shop Now ></a>
         </header>
         <div class="spacing2"></div>
         <aside id="sidebar" class="sidebar">
@@ -52,106 +62,145 @@
         </aside>
         <section class="headersection smallblack">
             <section class="figures">
-                <ul class="figuresul" id="test">
-                    <li class="figure"><a id="txt1" href="">Laptops</a><img id="img1" src="src/images/componentes/laptops.png" alt=""></li>
-                    <li class="figure"><a id="txt2" href="">Components</a><img id="img2" src="src/images/componentes/components.png" alt=""></li>
-                    <li class="figure"><a id="txt3" href="">Mice</a><img id="img3" src="src/images/componentes/mice.png" alt=""></li>
-                    <li class="figure"><a id="txt4" href="">Keyboards</a><img id="img4" src="src/images/componentes/keyboards.png" alt=""></li>
-                    <li class="figure"><a id="txt5" href="">Audio</a><img id="img5" src="src/images/componentes/audio.png" alt=""></li>
-                    <li class="figure"><a id="txt6" href="">Content</a><img id="img6" src="src/images/componentes/contentcreation.png" alt=""></li>
-                    <li class="figure"><a id="txt7" href="">Chairs</a><img id="img7" src="src/images/componentes/chairs.png" alt=""></li>
-                    <li class="figure"><a id="txt8" href="">Console</a><img id="img8" src="src/images/componentes/console.png" alt=""></li>
-                    <li class="figure"><a id="txt9" href="">Mobile</a><img id="img9" src="src/images/componentes/mobile.png" alt=""></li>
-                    <li class="figure"><a id="txt10" href="">Gear</a><img id="img10" src="src/images/componentes/gear.png" alt=""></li>
-                </ul>
-            <section class="content">
-                <div class="label">
-                    <h2><span>THE LATEST AND GREATEST GAMING GEAR</span>RAZER MICE, KEYBOARDS, HEADSETS, LAPTOPS & MORE</h2>
-                    <ul class="figuresul">
-                        <li class="hrefsacola">
-                            <img src="src/images/logo/razerstore-icon.svg" alt="">
-                            <a href="http://www.razer.com/us/en/mouse-and-keyboard/">Mouse and Keyboard <span>></span></a>
-                        </li>
+                <div class="centralize">
+                    <ul class="figuresul" id="test">
+                        <li class="figure"><a id="txt1" href="">Laptops</a><img id="img1"
+                                src="src/images/componentes/laptops.png" alt=""></li>
+                        <li class="figure"><a id="txt2" href="">Components</a><img id="img2"
+                                src="src/images/componentes/components.png" alt=""></li>
+                        <li class="figure"><a id="txt3" href="">Mice</a><img id="img3"
+                                src="src/images/componentes/mice.png" alt=""></li>
+                        <li class="figure"><a id="txt4" href="">Keyboards</a><img id="img4"
+                                src="src/images/componentes/keyboards.png" alt=""></li>
+                        <li class="figure"><a id="txt5" href="">Audio</a><img id="img5"
+                                src="src/images/componentes/audio.png" alt=""></li>
+                        <li class="figure"><a id="txt6" href="">Content</a><img id="img6"
+                                src="src/images/componentes/contentcreation.png" alt=""></li>
+                        <li class="figure"><a id="txt7" href="">Chairs</a><img id="img7"
+                                src="src/images/componentes/chairs.png" alt=""></li>
+                        <li class="figure"><a id="txt8" href="">Console</a><img id="img8"
+                                src="src/images/componentes/console.png" alt=""></li>
+                        <li class="figure"><a id="txt9" href="">Mobile</a><img id="img9"
+                                src="src/images/componentes/mobile.png" alt=""></li>
+                        <li class="figure"><a id="txt10" href="">Gear</a><img id="img10"
+                                src="src/images/componentes/gear.png" alt=""></li>
                     </ul>
                 </div>
-            </section>
-            <section class="showcase">
-                <div class="showheader">
-                    <h2>FRESH OFF THE LINE</h2>
-                    <span>Check out our latest releases to secure the most up-to-date upgrades for your setup</span>
-                </div>
+                <section class="content">
+                    <div class="label">
+                        <h2><span>THE LATEST AND GREATEST GAMING GEAR</span>RAZER MICE, KEYBOARDS, HEADSETS, LAPTOPS &
+                            MORE</h2>
+                        <ul class="figuresul">
+                            <li class="hrefsacola">
+                                <img src="src/images/logo/razerstore-icon.svg" alt="">
+                                <a href="http://www.razer.com/us/en/mouse-and-keyboard/">Mouse and Keyboard
+                                    <span>></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="showcase">
+                    <div class="showheader">
+                        <h2>FRESH OFF THE LINE</h2>
+                        <span>Check out our latest releases to secure the most up-to-date upgrades for your setup</span>
+                    </div>
 
-                <div class="carousel-snapper">
-                    <button class="arrow-left control" aria-label="Next Image">◀</button>
-                    <button class="arrow-right control" aria-label="Next Image">▶</button>
-                </div>
-                <ul class="boxes">
-                    <li class="box currentbox" id="1">
-                        <div class="tag"><a>NEW</a></div>
-                        <div class="boximg"><img src="src/images/showcase/fone.png" alt=""></div>
-                        <div class="hotbar">
-                            <label>Razer Kaira HyperSpeed - Xbox Licensed</label>
-                            <span>Wireless Multi-Platform Gaming Headset</span>
-                        </div>
-                        <div class="rodape">
-                            <span class="price">US$129.99</span>
-                            <a href="#" class="buy">BUY</a>
-                        </div>
-                    </li>
-                    <li class="box currentbox" id="2">
-                        <div class="tag laranja"><a>EXCLUSIVE</a></div>
-                        <div class="boximg"><img src="src/images/showcase/mouse.png" alt=""></div>
-                        <div class="hotbar">
-                            <label>Razer Kaira HyperSpeed - Xbox Licensed</label>
-                            <span>Wireless Multi-Platform Gaming Headset</span>
-                        </div>
-                        <div class="rodape">
-                            <span class="price">US$129.99</span>
-                            <a href="#" class="buy">BUY</a>
-                        </div>
-                    </li>
-                    <li class="box currentbox" id="3">
-                        <div class="tag laranja"><a>EXCLUSIVE</a></div>
-                        <div class="boximg"><img src="src/images/showcase/oculos.png" alt=""></div>
-                        <div class="hotbar">
-                            <label>Razer Kaira HyperSpeed - Xbox Licensed</label>
-                            <span>Wireless Multi-Platform Gaming Headset</span>
-                        </div>
-                        <div class="rodape">
-                            <span class="price">US$129.99</span>
-                            <a href="#" class="buy">BUY</a>
-                        </div>
-                    </li>
-                    <li class="box currentbox" id="4">
-                        <div class="boximg"><img src="src/images/showcase/teclado.png" alt=""></div>
-                        <div class="hotbar">
-                            <label>Razer Kaira HyperSpeed - Xbox Licensed</label>
-                            <span>Wireless Multi-Platform Gaming Headset</span>
-                        </div>
-                        <div class="rodape">
-                            <span class="price">US$129.99</span>
-                            <a href="#" class="buy">BUY</a>
-                        </div>
-                    </li>
-                    <li class="box currentbox" id="5">
-                        <div class="boximg"><img src="src/images/showcase/controller.png" alt=""></div>
-                        <div class="hotbar">
-                            <label>Razer Kaira HyperSpeed - Xbox Licensed</label>
-                            <span>Wireless Multi-Platform Gaming Headset</span>
-                        </div>
-                        <div class="rodape">
-                            <span class="price">US$129.99</span>
-                            <a href="#" class="buy">BUY</a>
-                        </div>
-                    </li>
-                </ul>
+                    <div class="carousel-snapper">
+                        <button class="arrow-left control" aria-label="Next Image">◀</button>
+                        <button class="arrow-right control" aria-label="Next Image">▶</button>
+                    </div>
+                    <ul class="boxes">
+                        <li class="box currentbox" id="1">
+                            <div class="tag"><a>NEW</a></div>
+                            <div class="boximg"><img src="src/images/showcase/fone.png" alt=""></div>
+                            <div class="hotbar">
+                                <label>Razer Kaira HyperSpeed - Xbox Licensed</label>
+                                <span>Wireless Multi-Platform Gaming Headset</span>
+                            </div>
+                            <div class="rodape">
+                                <span class="price">US$129.99</span>
+                                <a href="#" class="buy">BUY</a>
+                            </div>
+                        </li>
+                        <li class="box currentbox" id="2">
+                            <div class="tag laranja"><a>EXCLUSIVE</a></div>
+                            <div class="boximg"><img src="src/images/showcase/mouse.png" alt=""></div>
+                            <div class="hotbar">
+                                <label>Razer Kaira HyperSpeed - Xbox Licensed</label>
+                                <span>Wireless Multi-Platform Gaming Headset</span>
+                            </div>
+                            <div class="rodape">
+                                <span class="price">US$129.99</span>
+                                <a href="#" class="buy">BUY</a>
+                            </div>
+                        </li>
+                        <li class="box currentbox" id="3">
+                            <div class="tag laranja"><a>EXCLUSIVE</a></div>
+                            <div class="boximg"><img src="src/images/showcase/oculos.png" alt=""></div>
+                            <div class="hotbar">
+                                <label>Razer Kaira HyperSpeed - Xbox Licensed</label>
+                                <span>Wireless Multi-Platform Gaming Headset</span>
+                            </div>
+                            <div class="rodape">
+                                <span class="price">US$129.99</span>
+                                <a href="#" class="buy">BUY</a>
+                            </div>
+                        </li>
+                        <li class="box currentbox" id="4">
+                            <div class="boximg"><img src="src/images/showcase/teclado.png" alt=""></div>
+                            <div class="hotbar">
+                                <label>Razer Kaira HyperSpeed - Xbox Licensed</label>
+                                <span>Wireless Multi-Platform Gaming Headset</span>
+                            </div>
+                            <div class="rodape">
+                                <span class="price">US$129.99</span>
+                                <a href="#" class="buy">BUY</a>
+                            </div>
+                        </li>
+                        <li class="box currentbox" id="5">
+                            <div class="boximg"><img src="src/images/showcase/controller.png" alt=""></div>
+                            <div class="hotbar">
+                                <label>Razer Kaira HyperSpeed - Xbox Licensed</label>
+                                <span>Wireless Multi-Platform Gaming Headset</span>
+                            </div>
+                            <div class="rodape">
+                                <span class="price">US$129.99</span>
+                                <a href="#" class="buy">BUY</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="images">
+                        <li class="img" id="1">
+                            <div class="imgG">
+                                <img class="layer" src="src/images/gallery/lightup.jpg">
+                            </div>
+                        </li>
+                        <li class="img" id="2">
+                            <div class="imgG">
+                                <img class="layer" src="src/images/gallery/gearupforglory.jpg">
+                            </div>
+                        </li>
+                        <li class="img" id="3">
+                            <div class="imgG">
+                                <img class="layer" src="src/images/gallery/viva la chroma.jpg">
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="checks">
+                        <button id="1" class="check">
+                            <button id="2" class="check">
+                                <button id="3" class="check">
+                    </div>
+                </section>
             </section>
-        </section>
     </main>
 
     <script src="src/js/main.js"></script>
     <script src="src/js/counter.js"></script>
     <script src="src/js/controls.js"></script>
     <script src="src/js/darkmode.js"></script>
+    <script src="src/js/checks.js"></script>
+    <script src="src/js/searchbar.js"></script>
 </body>
+
 </html>
